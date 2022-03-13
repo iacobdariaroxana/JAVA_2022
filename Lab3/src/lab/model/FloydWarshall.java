@@ -12,7 +12,7 @@ public class FloydWarshall {
     private Map<Node, Integer> nodesIndex = new HashMap<>();
     private int[][] costMatrix;
     private int numberOfNodes;
-    int[][] shortestTimes;
+    private int[][] shortestTimes;
 
     public FloydWarshall(List<Node> nodes) {
         int counter = 0;
