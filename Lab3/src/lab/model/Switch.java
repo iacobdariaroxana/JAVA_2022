@@ -4,7 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Switch extends Node {
-    Map<Node, Node> connections = new HashMap<>();
     public Switch(String name, String location) {
         super(name, location);
     }

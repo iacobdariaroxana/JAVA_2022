@@ -1,6 +1,7 @@
 package lab.model;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.Objects;
 
@@ -68,6 +69,18 @@ public abstract class Node implements Comparable<Node> {
 
     public void setCost(Node node, int value) {
         cost.put(node, value);
+    }
+
+    public Map<Node,Integer> getCostsMap(){
+        return cost;
+    }
+    public String getCosts() {
+        StringBuilder str = new StringBuilder();
+        for (Node node : cost.keySet()) {
+            str.append(this.getLocation()).append("--").append(node.getLocation()).append(" ").append(cost.get(node));
+            str.append("\n");
+        }
+        return str.toString();
     }
 
     @Override

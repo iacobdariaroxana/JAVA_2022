@@ -57,7 +57,7 @@ public class Computer extends Node implements Identifiable, Storage {
                 ", hardwareAddress='" + getHardwareAddress() + '\'' +
                 ", location='" + getLocation() + '\'' +
                 ",IP address='" + ipAddress + '\'' +
-                ", storageCapacity=" + storageCapacity +
+                ", storageCapacity=" + convert(storageCapacity, "MB") + "MB" +
                 '}';
     }
 }
