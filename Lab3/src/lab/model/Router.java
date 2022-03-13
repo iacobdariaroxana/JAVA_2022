@@ -32,7 +32,12 @@ public class Router extends Node implements Identifiable {
         Router router = (Router) o;
         return Objects.equals(ipAddress, router.ipAddress);
     }
-    
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), ipAddress);
+    }
+
     @Override
     public String toString() {
         return "Router{" + "name='" + getName() + '\'' +
