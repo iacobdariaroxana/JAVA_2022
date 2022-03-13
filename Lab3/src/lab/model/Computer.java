@@ -23,7 +23,7 @@ public class Computer extends Node implements Identifiable, Storage {
         return ipAddress;
     }
 
-    public void setIp(String ipAddress) {
+    public void setIpAddress(String ipAddress) {
         this.ipAddress = ipAddress;
     }
 
