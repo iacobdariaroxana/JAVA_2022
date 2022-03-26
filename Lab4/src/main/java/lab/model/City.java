@@ -1,5 +1,7 @@
 package lab.model;
 
+import lab.alg.Prim;
+
 import java.util.*;
 
 public class City {
@@ -34,7 +36,8 @@ public class City {
 
     public void displayStreetsWithSpecificProperties(int length) {
         System.out.println("Streets with the required properties are:");
-        streetList.stream().filter(s -> s.getLength() > length).filter(s -> (cityMap.get(s.getFirstIntersection()).size() + cityMap.get(s.getFirstIntersection()).size() - 2) > 2).forEach(System.out::println);
+        streetList.stream().filter(s -> s.getLength() > length).filter(s ->
+                (cityMap.get(s.getFirstIntersection()).size() + cityMap.get(s.getFirstIntersection()).size() - 2) > 2).forEach(System.out::println);
     }
 
     public int[][] getIntersectionsAdjacencyCost() {
@@ -67,5 +70,7 @@ public class City {
         for (int[] row : streetNodes) {
             streetList.stream().filter(street -> (street.getFirstNode() == row[0] && street.getSecondNode() == row[1]) || (street.getFirstNode() == row[1] && street.getSecondNode() == row[0])).forEach(System.out::println);
         }
+        System.out.println("MST cost = " + prim.getMSTCost());
     }
+
 }

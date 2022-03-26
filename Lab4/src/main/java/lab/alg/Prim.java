@@ -1,4 +1,4 @@
-package lab.model;
+package lab.alg;
 
 import java.util.Arrays;
 
@@ -56,6 +56,13 @@ public class Prim {
         return edgeNodes;
     }
 
+    public int getMSTCost(){
+        int cost = 0;
+        for(int[] row:edgeNodes){
+            cost+= adjacencyCost[row[0]][row[1]];
+        }
+        return cost;
+    }
     public void showMatrix() {
         for (int[] row : adjacencyCost)
             System.out.println(Arrays.toString(row));

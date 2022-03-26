@@ -1,10 +1,9 @@
 package lab.app;
 
-import com.github.javafaker.Address;
 import com.github.javafaker.Faker;
+import lab.alg.TravellingSalesmanProblem;
 import lab.model.City;
 import lab.model.Intersection;
-import lab.model.Prim;
 import lab.model.Street;
 
 import java.util.*;
