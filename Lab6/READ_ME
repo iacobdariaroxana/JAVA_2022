@@ -1,0 +1,9 @@
+0 - pink
+1 - purple
+
+Returned codes for controller:
+-> 0 : not a node
+-> 1 : can draw stone
+-> 2 : not a neighbor of previous selected node
+-> 3 : game over player 0 won (PINK)
+-> 4 : game over player 1 won (purple)
