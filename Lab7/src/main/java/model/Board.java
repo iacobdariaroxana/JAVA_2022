@@ -11,7 +11,7 @@ public class Board {
     public synchronized void addWord(Player player, String word) {
         if (words.containsKey(player)) {
             words.get(player).add(word);
-            System.out.println(player.getName() + ": " + word);
+//            System.out.println(player.getName() + ": " + word);
         } else {
             words.put(player, new ArrayList<>());
             words.get(player).add(word);

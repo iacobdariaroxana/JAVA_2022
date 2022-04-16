@@ -10,7 +10,7 @@ public class Bag {
 
     public Bag() {
         int k = 0;
-        for (char c = 'A'; c < 'Z'; c++) {
+        for (char c = 'a'; c < 'z'; c++) {
             Tile tile = new Tile(c, points[k]);
             letters.put(tile, frequency[k]);
             k++;
@@ -23,6 +23,7 @@ public class Bag {
             letters.remove(tileToUpdate);
         }
     }
+
     public synchronized List<Tile> extractTiles(int howMany) {
         List<Tile> extracted = new ArrayList<>();
         for (int i = 0; i < howMany; i++) {

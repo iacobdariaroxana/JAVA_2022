@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Objects;
+
 public class Tile {
     private char letter;
     private int points;
@@ -22,6 +24,19 @@ public class Tile {
 
     public void setPoints(int points) {
         this.points = points;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Tile tile = (Tile) o;
+        return letter == tile.letter;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(letter);
     }
 
     @Override
