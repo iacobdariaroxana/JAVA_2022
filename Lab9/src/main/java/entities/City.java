@@ -119,4 +119,8 @@ public class City extends AbstractEntity implements Serializable {
                 ", longitude=" + longitude +
                 '}';
     }
+
+    public int getPopulation() {
+        return this.population;
+    }
 }

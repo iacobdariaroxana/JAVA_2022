@@ -67,6 +67,7 @@ public class API {
         data.create(new Country("Transnistria"));
 
 //        em.getTransaction().commit();
+        ChocoSolverDemo.getCities('R', 3, 10);
         MyEntityManagerFactory.closeEntities();
     }
 }
