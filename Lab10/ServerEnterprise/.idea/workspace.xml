@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ec566d3b-9059-4c25-94e5-4973a11e123a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Lab10/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab10/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab10/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab10/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab10/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab10/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab10/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab10/src/main/java/client/HelloClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab10/src/main/java/client/SimpleClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab10/src/main/java/client/URLConnectionDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab10/src/main/java/client/URLContentReading.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab10/src/main/java/client/UdpClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab10/src/main/java/server/ClientThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab10/src/main/java/server/HelloImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab10/src/main/java/server/HelloServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab10/src/main/java/server/SimpleServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab10/src/main/java/server/UdpServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab10/src/main/java/services/Hello.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laborator10 - Copy/Client/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laborator10 - Copy/Client/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laborator10 - Copy/Client/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laborator10 - Copy/Client/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laborator10 - Copy/Client/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laborator10 - Copy/Client/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laborator10 - Copy/Client/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laborator10 - Copy/Client/src/main/java/network/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laborator10 - Copy/Client/target/classes/network/Client.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laborator10 - Copy/Server/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laborator10 - Copy/Server/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laborator10 - Copy/Server/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laborator10 - Copy/Server/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laborator10 - Copy/Server/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laborator10 - Copy/Server/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laborator10 - Copy/Server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laborator10 - Copy/Server/src/main/java/network/ClientThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laborator10 - Copy/Server/src/main/java/network/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laborator10 - Copy/Server/src/main/java/network/SocialNetwork.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laborator10 - Copy/Server/src/main/java/network/StoreBoardByFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laborator10 - Copy/Server/src/main/java/network/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laborator10 - Copy/Server/src/main/test.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laborator10 - Copy/Server/target/classes/network/ClientThread.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laborator10 - Copy/Server/target/classes/network/Server.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laborator10 - Copy/Server/target/classes/network/SocialNetwork.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laborator10 - Copy/Server/target/classes/network/StoreBoardByFile.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laborator10 - Copy/Server/target/classes/network/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/src/main/java/network/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/target/classes/network/Client.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/.idea/sonarlint/issuestore/4/1/41538ba059076b869075d50808c6cdc99b1f28de" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/.idea/sonarlint/issuestore/4/c/4cebb8b3027b4c2bda089c665f60c60217b52953" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/.idea/sonarlint/issuestore/7/5/7581e596af614efd6f1420f155a4c6c78f6bdc47" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/.idea/sonarlint/issuestore/8/c/8c1e3fc2c15a2c26ba985cf3970b79119aded99d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/.idea/sonarlint/issuestore/b/9/b9ea97361f83df41789b1a983dbd56745598c0e1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/src/main/java/network/ClientThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/src/main/java/network/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/src/main/java/network/SocialNetwork.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/src/main/java/network/StoreBoardByFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/src/main/java/network/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/src/main/test.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/target/classes/network/ClientThread.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/target/classes/network/Server.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/target/classes/network/SocialNetwork.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/target/classes/network/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ServerEnterprise_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ServerEnterprise_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/67eb3830-0a0a-4c12-92d3-98adbdfbb62a.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/67eb3830-0a0a-4c12-92d3-98adbdfbb62a/storage_v2/_src_/schema/STUDENT.Gw7Kug.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/67eb3830-0a0a-4c12-92d3-98adbdfbb62a/storage_v2/_src_/schema/STUDENT.Gw7Kug.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/67eb3830-0a0a-4c12-92d3-98adbdfbb62a/storage_v2/_src_/schema/SYS.rUIBAA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/67eb3830-0a0a-4c12-92d3-98adbdfbb62a/storage_v2/_src_/schema/SYSTEM.L2avkg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/2/b227cce7c3a50550b9d6e09557fbc1034824d326" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/AbstractEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/Friend.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/network/ClientThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/network/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/network/SocialNetwork.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/network/StoreMapSVG.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/network/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/AbstractRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/FriendsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/singleton/MyEntityManagerFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/test.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab9/.idea/sonarlint/issuestore/1/5/150c1ad512cd811159c5f403272624c3dc564ab8" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab9/.idea/sonarlint/issuestore/1/5/150c1ad512cd811159c5f403272624c3dc564ab8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab9/.idea/sonarlint/issuestore/2/e/2ee7133f6ddaa799b9caedb48291f6cb21af8105" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab9/.idea/sonarlint/issuestore/2/e/2ee7133f6ddaa799b9caedb48291f6cb21af8105" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab9/.idea/sonarlint/issuestore/3/e/3e9702929e628de7cb495671af112fcf05f8fa95" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab9/.idea/sonarlint/issuestore/3/e/3e9702929e628de7cb495671af112fcf05f8fa95" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab9/.idea/sonarlint/issuestore/8/2/8236c5372d52074df2d6ee91ac8c85c82f4c6778" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab9/.idea/sonarlint/issuestore/8/2/8236c5372d52074df2d6ee91ac8c85c82f4c6778" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab9/.idea/sonarlint/issuestore/b/6/b6f427abb2410e1765841daf3c215c6efb3baf0e" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab9/.idea/sonarlint/issuestore/b/6/b6f427abb2410e1765841daf3c215c6efb3baf0e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab9/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab9/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="com.haulmont.jpb.JpaEntity" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="28yHGwbYfd1lGMDkOKrnGKaCP5z" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/an II sem II/Programare avansata/PA_2022_2B3_FLOREA_BOGDAN/Laborator10/ServerEnterprise/src/main/java&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;oracle&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\an II sem II\Programare avansata\PA_2022_2B3_FLOREA_BOGDAN\Laborator10\ServerEnterprise\src\main\java" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="singleton" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.network.Server">
+    <configuration name="StoreMapSVG" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="network.StoreMapSVG" />
+      <module name="ServerEnterprise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="network.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="network.Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="network.Server" />
+      <module name="ServerEnterprise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="network.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.network.Server" />
+        <item itemvalue="Application.StoreMapSVG" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ec566d3b-9059-4c25-94e5-4973a11e123a" name="Changes" comment="" />
+      <created>1652181814024</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652181814024</updated>
+      <workItem from="1652181816583" duration="7682000" />
+      <workItem from="1652195616601" duration="6346000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

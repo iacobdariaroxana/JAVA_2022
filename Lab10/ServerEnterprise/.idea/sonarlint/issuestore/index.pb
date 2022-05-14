@@ -1,0 +1,29 @@
+
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+c
+3src/main/java/singleton/MyEntityManagerFactory.java,b\2\b227cce7c3a50550b9d6e09557fbc1034824d326
+a
+1src/main/java/repositories/FriendsRepository.java,9\3\9393128efa704ab23d1a67b01215e490ee81cf09
+^
+.src/main/java/repositories/UserRepository.java,a\b\ab0c1571a03b3cbc85267459f3b01287ab8a97a8
+b
+2src/main/java/repositories/AbstractRepository.java,2\e\2ee7133f6ddaa799b9caedb48291f6cb21af8105
+O
+src/main/java/network/User.java,8\c\8c1e3fc2c15a2c26ba985cf3970b79119aded99d
+Z
+*src/main/java/entities/AbstractEntity.java,8\2\8236c5372d52074df2d6ee91ac8c85c82f4c6778
+R
+"src/main/java/entities/Friend.java,d\c\dc37de41cb40d1a4dda69620387a519449c7c3fa
+P
+ src/main/java/entities/User.java,5\f\5fa02fe45c9f7e20c3b267dee4d4126eab2f79f8
+Q
+!src/main/java/network/Server.java,4\1\41538ba059076b869075d50808c6cdc99b1f28de
+W
+'src/main/java/network/ClientThread.java,4\c\4cebb8b3027b4c2bda089c665f60c60217b52953
+X
+(src/main/java/network/SocialNetwork.java,b\9\b9ea97361f83df41789b1a983dbd56745598c0e1
+A
+src/main/test.svg,d\8\d8b69de7b1fedf586a0cddf2679cb1b0bdea2ddc
+V
+&src/main/java/network/StoreMapSVG.java,7\5\7519abb507871edda6992eead9ea0b6cd65e3943

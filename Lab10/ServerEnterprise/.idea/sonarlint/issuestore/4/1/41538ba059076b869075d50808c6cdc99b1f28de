@@ -1,0 +1,11 @@
+
+`
+java:S2259"JA "NullPointerException" could be thrown; "serverSocket" is nullable here.(§ˆïó
+=
+java:S2189""Add an end condition to this loop.(˜ïˆžÿÿÿÿÿ
+E
+java:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+U
+java:S1854":Remove this useless assignment to local variable "server".(ë‡õ¸ÿÿÿÿÿ
+F
+java:S1481"+Remove this unused "server" local variable.(ë‡õ¸ÿÿÿÿÿ
