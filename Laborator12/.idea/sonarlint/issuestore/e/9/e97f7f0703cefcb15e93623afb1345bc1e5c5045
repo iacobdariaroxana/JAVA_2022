@@ -1,0 +1,22 @@
+
+J
+java:S3740("/Provide the parametrized type for this generic.(ß‹‰£şÿÿÿÿ
+D
+java:S3740-"/Provide the parametrized type for this generic.(âƒİ
+A
+java:S18721"Use "isAssignableFrom" instead.( ®¸Êÿÿÿÿÿ8Ø³³¶0
+S
+java:S1128"8Remove this unused import 'org.testng.annotations.Test'.(á½úáùÿÿÿÿ
+H
+java:S1128"2Remove this unused import 'java.util.Enumeration'.(»îÜ®
+C
+java:S1128	".Remove this unused import 'java.util.HashSet'.(Ê‚êX
+E
+java:S1128
+"*Remove this unused import 'java.util.Set'.(ö²„¤şÿÿÿÿ
+I
+java:S1128"3Remove this unused import 'java.util.jar.JarEntry'.(äÛá“
+H
+java:S1128"2Remove this unused import 'java.util.jar.JarFile'.(¾¾”ß
+H
+java:S1128"2Remove this unused import 'java.util.zip.ZipFile'.(ˆ«„Ã

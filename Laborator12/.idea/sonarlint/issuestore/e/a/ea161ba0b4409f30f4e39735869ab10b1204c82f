@@ -1,0 +1,51 @@
+
+`	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+`	java:S112)"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+`	java:S1123"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+a	java:S112Ÿ"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+a	java:S112©"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+J
+java:S3740"/Provide the parametrized type for this generic.(æääåşÿÿÿÿ
+E
+java:S3740"/Provide the parametrized type for this generic.(¼š›‡
+J
+java:S3740!"/Provide the parametrized type for this generic.(É–õúÿÿÿÿÿ
+E
+java:S3740/"/Provide the parametrized type for this generic.(ÒÒ½½
+J
+java:S37408"/Provide the parametrized type for this generic.(ÊñÚìÿÿÿÿÿ
+E
+java:S3740D"/Provide the parametrized type for this generic.(Ëß·¼
+E
+java:S3740G"/Provide the parametrized type for this generic.(òòú
+J
+java:S3740U"/Provide the parametrized type for this generic.(†¸öúùÿÿÿÿ
+J
+java:S3740h"/Provide the parametrized type for this generic.(¹ĞÌşÿÿÿÿ
+K
+java:S3740š"/Provide the parametrized type for this generic.(ªğ‹úÿÿÿÿ
+K
+java:S3740¡"/Provide the parametrized type for this generic.(ª¡†üÿÿÿÿ
+F
+java:S3740¥"/Provide the parametrized type for this generic.(›üÃ“
+F
+java:S3740®"/Provide the parametrized type for this generic.(£© ã
+K
+java:S3740¾"/Provide the parametrized type for this generic.(¿ˆØåÿÿÿÿÿ
+?
+java:S1659W"$Declare "failed" on a separate line.(²­ùİøÿÿÿÿ
+@
+java:S1181^"%Catch Exception instead of Throwable.(À˜§üÿÿÿÿ
+›
+java:S1130h"yRemove the declaration of thrown exception 'java.lang.ClassNotFoundException', as it cannot be thrown from method's body.(¹ĞÌşÿÿÿÿ8Ó¾¾¶0
+?
+java:S1659k"$Declare "failed" on a separate line.(²­ùİøÿÿÿÿ
+3
+java:S2119i"Save and re-use this "Random".(¼İÅf
+D
+java:S1872n"'Use an "instanceof" comparison instead.(ìçÁ­8Ó¾¾¶0
+@
+java:S1181"%Catch Exception instead of Throwable.(À˜§üÿÿÿÿ
+<	java:S131p""Add a default case to this switch.(Ö¥¾øÿÿÿÿ
+P
+java:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
