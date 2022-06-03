@@ -1,9 +1,11 @@
 package lab.app;
 
+import lab.alg.FloydWarshall;
 import lab.model.*;
 
 public class Main {
     public static void main(String[] args) {
+
         Network network = new Network();
         Computer c1 = new Computer("A", "00-00-00-00-00-00", "v1", "127.0.0.1", 16);
         Computer c2 = new Computer("B", "00-00-00-00-00-07", "v6", "127.0.0.6", 8);
@@ -36,5 +38,6 @@ public class Main {
         FloydWarshall fw = new FloydWarshall(network.getNodes());
         fw.findAllShortestTimes();
         fw.getAllShortestTimes(network.getIdentifiableNodes());
+
     }
 }

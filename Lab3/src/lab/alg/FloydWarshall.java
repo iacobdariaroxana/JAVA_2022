@@ -1,4 +1,6 @@
-package lab.model;
+package lab.alg;
+
+import lab.model.Node;
 
 import java.util.*;
 

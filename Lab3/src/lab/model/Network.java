@@ -28,11 +28,9 @@ public class Network {
         else
             ipAddress2 = ((Router) n2).getIpAddress();
         return ipAddress1.compareTo(ipAddress2);
+//        return ((Identifiable) n1).getIpAddress().compareTo(((Identifiable) n2).getIpAddress());
     }
 
-/*    public int compareByAddress(Node n1, Node n2){
-        return n1.getHardwareAddress().compareTo(n2.getHardwareAddress());
-    }*/
     public void setIdentifiableNodes() {
         for (Node node : nodes) {
             if (node instanceof Identifiable) {
