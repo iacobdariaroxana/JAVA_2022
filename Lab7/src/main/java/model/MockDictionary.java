@@ -6,6 +6,11 @@ import java.nio.file.Paths;
 import java.util.Optional;
 
 public class MockDictionary implements Dictionary{
+    @Test
+    public MockDictionary(){
+
+    }
+    @Test
     public boolean isWord(String str){
         try{
             Optional<String> opt = Files.lines(Paths.get("words.txt"))

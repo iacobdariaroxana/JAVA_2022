@@ -1,4 +1,2 @@
 
-f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íû—ı
-f
-java:S2095"DUse try-with-resources or close this "Socket" in a "finally" clause.(÷…şÚùÿÿÿÿ8é‡öÔŠ0
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íû—ı8××ÙŒ0

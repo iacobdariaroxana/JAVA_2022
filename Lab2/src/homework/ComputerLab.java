@@ -7,16 +7,17 @@ package homework;
 /**
  * Class for defining a computer laboratory
  */
-public class ComputerLab extends Room{
+public class ComputerLab extends Room {
     private String computersOperatingSystem;
 
     /**
      * Parameterized Constructor of class ComputerLab
-     * @param name ComputerLab name
-     * @param capacity the maximum number of students who can entry into ComputerLab
+     *
+     * @param name            ComputerLab name
+     * @param capacity        the maximum number of students who can entry into ComputerLab
      * @param operatingSystem what Operating System are using the computers from the lab
      */
-    ComputerLab(String name, int capacity, String operatingSystem){
+    public ComputerLab(String name, int capacity, String operatingSystem) {
         super(name, capacity);
         this.computersOperatingSystem = operatingSystem;
     }

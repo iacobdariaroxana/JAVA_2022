@@ -1,40 +1,38 @@
 package com.laborator11.network.services;
 
-import entities.Friend;
-import entities.User;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
+import at.favre.lib.crypto.bcrypt.BCrypt;
+import models.User;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import repositories.AbstractRepository;
 import repositories.FriendsRepository;
+import repositories.MessageRepository;
 import repositories.UserRepository;
-
 import java.util.List;
 
 @Component
 @Service
 public class UserService {
+
     private AbstractRepository<User, Integer> dataUser = new UserRepository("User");
     private FriendsRepository dataFriend = new FriendsRepository("Friend");
 
+    private MessageRepository dataMessage = new MessageRepository("Message");
+
     public User findUser(int id) {
-        User user = dataUser.findById(id);
-        return user;
+        return dataUser.findById(id);
     }
 
     public List<User> getUsers() {
         return dataUser.findAll();
     }
 
-    public Long createUser(String name) {
-        dataUser.create(new User(name));
-        return dataUser.findByName(name).get(0).getId();
-    }
-
-    public Long createUserObject(User user) {
-        dataUser.create(user);
-        return dataUser.findByName(user.getUsername()).get(0).getId();
+    public String createUserObject(User user) {
+        if(dataUser.findByUsername(user.getUsername()).isEmpty()){
+            dataUser.create(new User(user.getUsername(), getEncodedPassword(user.getPassword())));
+            return "success";
+        }
+        return "username already exists";
     }
 
     public boolean updateUser(int id, String name) {
@@ -42,10 +40,7 @@ public class UserService {
         if (user == null) {
             return false;
         }
-        dataFriend.updateByUsername1(user.getUsername(), name);
-        dataFriend.updateByUsername2(user.getUsername(), name);
-        Friend.updateFriend(user.getUsername(), name);
-        dataUser.updateUsername(user.getUsername(), name);
+        dataUser.updateUsername(user.getId(), name);
         user.setUsername(name);
         return true;
     }
@@ -56,7 +51,14 @@ public class UserService {
             return false;
         }
         dataUser.delete(id);
-        dataFriend.deleteByUsername(user.getUsername());
+        dataFriend.delete(Math.toIntExact(user.getId()));
+        dataMessage.deleteByUserId(user.getId());
         return true;
+    }
+
+    private String getEncodedPassword(String password){
+        String encodedPassword= BCrypt.withDefaults().hashToString(12, password.toCharArray());
+//        BCrypt.Result result = BCrypt.verifyer().verify(password.toCharArray(), bcryptHashString);
+        return encodedPassword;
     }
 }

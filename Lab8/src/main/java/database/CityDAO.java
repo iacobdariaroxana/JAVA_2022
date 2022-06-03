@@ -23,9 +23,7 @@ public class CityDAO implements DAO<City> {
             preparedStatement.setInt(4, city.getCapital());
             preparedStatement.setDouble(5, city.getLatitude());
             preparedStatement.setDouble(6, city.getLongitude());
-
             preparedStatement.executeUpdate();
-
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -46,6 +44,7 @@ public class CityDAO implements DAO<City> {
                         resultSet.getDouble(5),
                         resultSet.getDouble(6)));
             }
+            resultSet.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -76,6 +75,7 @@ public class CityDAO implements DAO<City> {
             double cityLongitude = resultSet.getDouble("longitude");
             return new City(cityId, cityName, cityCountry, cityCapital, cityLatitude, cityLongitude);
         }
+        resultSet.close();
         return null;
     }
 

@@ -1,6 +1,7 @@
 package repositories;
 
-import entities.User;
+import models.User;
+import org.springframework.context.annotation.Bean;
 
 public class UserRepository extends AbstractRepository<User, Integer> {
     public UserRepository(String name){

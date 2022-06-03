@@ -1,0 +1,20 @@
+
+T
+java:S1854F"7Remove this useless assignment to local variable "end".(Í­íÁ8Ó±©Ğö/
+V
+java:S1854A"9Remove this useless assignment to local variable "start".( ÙÌù8Ó±©Ğö/
+T
+java:S1854>"7Remove this useless assignment to local variable "end".(Ğí‰Á8Ó±©Ğö/
+V
+java:S18549"9Remove this useless assignment to local variable "start".(’Ã¼8Ó±©Ğö/
+G
+java:S14819"*Remove this unused "start" local variable.(’Ã¼8Õ±©Ğö/
+Z	java:S106="9Replace this use of System.out or System.err by a logger.(“•ˆıÿÿÿÿ8ä³¯ö/
+]	java:S125<"<This block of commented-out lines of code should be removed.(ı†İÿÿÿÿÿÿ8ä³¯ö/
+E
+java:S1481>"(Remove this unused "end" local variable.(Ğí‰Á8Ø±©Ğö/
+]	java:S125?"<This block of commented-out lines of code should be removed.(ıä£¿ÿÿÿÿÿ8Ù±©Ğö/
+Z	java:S106E"9Replace this use of System.out or System.err by a logger.(†‰§àşÿÿÿÿ8å³¯ö/
+]	java:S125G"<This block of commented-out lines of code should be removed.(½¥²áûÿÿÿÿ8õ±©Ğö/
+D
+java:S1068	"'Remove this unused "MAX" private field.(£ŸÏß8æ³¯ö/

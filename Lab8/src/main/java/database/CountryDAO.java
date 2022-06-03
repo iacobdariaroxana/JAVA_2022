@@ -33,6 +33,7 @@ public class CountryDAO implements DAO<Country> {
             while (resultSet.next()) {
                 countryList.add(new Country(resultSet.getInt(1), resultSet.getString(2), resultSet.getString(3), resultSet.getInt(4)));
             }
+            resultSet.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }

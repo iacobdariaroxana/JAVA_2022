@@ -45,6 +45,7 @@ public class ContinentDAO implements DAO<Continent> {
             while (resultSet.next()) {
                 continentList.add(new Continent(resultSet.getInt(1), resultSet.getString(2), resultSet.getLong(3), resultSet.getLong(4)));
             }
+            resultSet.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -73,6 +74,7 @@ public class ContinentDAO implements DAO<Continent> {
             long continentPopulation = resultSet.getLong("population");
             return new Continent(continentId, continentName, continentArea, continentPopulation);
         }
+        resultSet.close();
         return null;
     }
 

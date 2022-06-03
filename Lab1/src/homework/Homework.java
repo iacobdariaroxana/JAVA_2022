@@ -25,7 +25,7 @@ public class Homework {
     public void displayWords(String[] words) {
         System.out.println("The generated array of strings contains the following words: ");
         for (String word : words) {
-            System.out.print(word + " ");
+            System.out.println(word + " ");
         }
     }
     public boolean[][] generateAdjacency(int n, String[] words) {

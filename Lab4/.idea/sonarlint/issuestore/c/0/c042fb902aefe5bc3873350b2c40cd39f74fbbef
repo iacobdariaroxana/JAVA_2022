@@ -1,0 +1,5 @@
+
+m
+java:S6204&"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(±¤¯²øÿÿÿÿ
+[
+java:S1128">Remove this unused import 'lab.alg.TravellingSalesmanProblem'.(ˆ‚»õ8Ñ‹¨Õû/

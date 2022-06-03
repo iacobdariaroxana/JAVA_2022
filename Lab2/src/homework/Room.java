@@ -3,6 +3,7 @@
  * @since 2022
  */
 package homework;
+
 /**
  * The Room class defines a model of a room
  */
@@ -18,16 +19,16 @@ public abstract class Room {
 
     /**
      * Parameterized constructor
-     * @param name Room name
+     *
+     * @param name     Room name
      * @param capacity Room capacity
      */
-    public Room(String name, int capacity){
+    public Room(String name, int capacity) {
         this.setName(name);
         this.setCapacity(capacity);
     }
 
     /**
-     *
      * @return returns the name of the room
      */
     public String getName() {
@@ -36,6 +37,7 @@ public abstract class Room {
 
     /**
      * Method for setting a name to a room
+     *
      * @param name Room name
      */
     public void setName(String name) {
@@ -43,7 +45,6 @@ public abstract class Room {
     }
 
     /**
-     *
      * @return returns the capacity of the room
      */
     public int getCapacity() {
@@ -52,6 +53,7 @@ public abstract class Room {
 
     /**
      * Method for setting a capacity to a room
+     *
      * @param capacity Room capacity
      */
     public void setCapacity(int capacity) {
@@ -59,8 +61,8 @@ public abstract class Room {
     }
 
     @Override
-    public boolean equals(Object obj){
-        if(obj == null || !(obj instanceof Room)){
+    public boolean equals(Object obj) {
+        if (obj == null || !(obj instanceof Room)) {
             return false;
         }
         Room other = (Room) obj;

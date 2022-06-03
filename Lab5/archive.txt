@@ -1,0 +1,2 @@
+jar cvfm lab5.jar manifest.txt app commands exceptions model
+java -jar lab5.jar

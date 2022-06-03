@@ -1,34 +1,16 @@
 package repositories;
 
-import entities.Friend;
-import entities.User;
+import models.Friend;
 
 import javax.persistence.NoResultException;
+import java.util.List;
 
 public class FriendsRepository extends AbstractRepository<Friend, Integer> {
     public FriendsRepository(String name) {
         super(name);
     }
 
-    public void updateByUsername1(String username, String replacedUsername) {
-        beginTransaction();
-        String query = this.getClassName() + ".updateByUsername1";
-        em.createNamedQuery(query).setParameter(1, username).
-                setParameter(2, replacedUsername).
-                executeUpdate();
-        commit();
-    }
-
-    public void updateByUsername2(String username, String replacedUsername) {
-        beginTransaction();
-        String query = this.getClassName() + ".updateByUsername2";
-        em.createNamedQuery(query).setParameter(1, username).
-                setParameter(2, replacedUsername).
-                executeUpdate();
-        commit();
-    }
-
-    public Friend findRelationship(String user1, String user2){
+    public Friend findRelationship(int user1, int user2){
         String query = this.getClassName() + ".findRelationship";
         Friend friend = null;
         try{
@@ -41,5 +23,27 @@ public class FriendsRepository extends AbstractRepository<Friend, Integer> {
         catch(NoResultException exception){
             return null;
         }
+    }
+
+    public List<Friend> findByUser1(int user1) {
+        String query = this.getClassName() + ".findByUser1";
+        List<Friend> friends = null;
+        try{
+            friends = em.createNamedQuery(query)
+                    .setParameter(1, user1)
+                    .getResultList();
+            return friends;
+        }
+        catch(NoResultException exception){
+            return null;
+        }
+    }
+
+    public void deleteByUserId(int id){
+        beginTransaction();
+        String query = this.getClassName() + ".deleteByUserId";
+        em.createNamedQuery(query)
+                .setParameter(1, id).executeUpdate();
+        commit();
     }
 }

@@ -1,0 +1,49 @@
+.inboxMessages, #inbox
+{
+    max-width: 800px;
+    color: white;
+}
+
+.inboxMessages > div {
+    display: flex;
+    padding: 5px 0 5px 25px;
+    font-size: 0.9em;
+    align-items: center;
+    background-color: rgba(35, 35, 35, 1);
+    color: white;
+}
+
+.searchTag
+{
+    margin: 15px 10px 15px 15px;
+}
+
+tr > td
+{
+    padding-left: 25px;
+    text-align: left;
+}
+
+tr:nth-child(2n)
+{
+    background-color:rgba(7, 128, 128, 0.25);
+}
+
+tr:nth-child(2n+1)
+{
+    background-color: rgba(7, 128, 128, 0.5);
+}
+
+#tableHeader {
+    background-color: rgba(244, 93, 72, 1);
+    color: white;
+    font-size: 1em;
+    padding: 1rem;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+th
+{
+    padding: 15px 10px 15px 25px;
+}

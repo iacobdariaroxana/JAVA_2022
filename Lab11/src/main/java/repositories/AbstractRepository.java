@@ -1,7 +1,6 @@
 package repositories;
 
-import entities.AbstractEntity;
-import entities.User;
+import models.AbstractEntity;
 import singleton.MyEntityManagerFactory;
 
 import javax.persistence.EntityManager;
@@ -18,56 +17,39 @@ public abstract class AbstractRepository<T extends AbstractEntity, ID extends Se
         this.className = name;
     }
 
-    public T findById(ID id) {
+    public T findById(ID id) { //for all entities
         String query = this.className + ".findById";
-        User user = null;
+        T obj = null;
         try{
-            user = (User) em.createNamedQuery(query)
+            obj = (T) em.createNamedQuery(query)
                     .setParameter(1, id)
                     .getSingleResult();
-            return (T) user;
+            return obj;
         }
         catch(NoResultException exception){
             return null;
         }
     }
 
-    public List<T> findByName(String name) {
-        String query = this.className + ".findByName";
+    public List<T> findByUsername(String username) { //only for User
+        String query = this.className + ".findByUsername";
         return  em.createNamedQuery(query)
-                .setParameter(1, name)
+                .setParameter(1, username)
                 .getResultList();
     }
 
-    public List<T> findAll() {
+    public List<T> findAll() { //for all entities
         String query = this.className + ".findAll";
         return  em.createNamedQuery(query)
                 .getResultList();
     }
 
-    public List<T> getMessages(String name) {
-        String query = this.className + ".getMessages";
-        return  em.createNamedQuery(query)
-                .setParameter(1, name)
-                .getResultList();
-    }
-
-    public void updateMessages(String name, String message) {
-        beginTransaction();
-        String query = this.className + ".updateMessages";
-        em.createNamedQuery(query)
-            .setParameter(1, message)
-            .setParameter(2, name);
-        commit();
-    }
-
-
-    public void create(T obj) {
+    public void create(T obj) { //for all entities
         System.out.println("Inserting into database ... " +  obj.toString());
         persist(obj);
     }
 
-    public void delete(ID id){
+    public void delete(ID id){ //for all entities
         beginTransaction();
         String query = this.className + ".delete";
         em.createNamedQuery(query)
@@ -75,17 +57,17 @@ public abstract class AbstractRepository<T extends AbstractEntity, ID extends Se
         commit();
     }
 
-    public void deleteByUsername(String username){
+    public void deleteByUsername(String username){ //for User
         beginTransaction();
         String query = this.className + ".deleteByUsername";
         em.createNamedQuery(query).setParameter(1, username).executeUpdate();
         commit();
     }
 
-    public void updateUsername(String username, String replacedUsername){
+    public void updateUsername(int id, String replacedUsername){ //for User
         beginTransaction();
         String query = this.className + ".updateByUsername";
-        em.createNamedQuery(query).setParameter(1, username).
+        em.createNamedQuery(query).setParameter(1, id).
                 setParameter(2, replacedUsername).
                 executeUpdate();
         commit();

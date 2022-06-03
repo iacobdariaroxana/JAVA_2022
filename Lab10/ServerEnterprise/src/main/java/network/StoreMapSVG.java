@@ -18,8 +18,6 @@ public class StoreMapSVG {
         SVGGraphics2D svgGraphics2D = new SVGGraphics2D(bufferedImage.getWidth(), bufferedImage.getHeight());
         try {
             svgGraphics2D.drawImage(bufferedImage, 0, 0, null);
-            //a=350, b=350, R=300
-//            svgGraphics2D.drawOval(50, 50, 650, 650);
             int numberOfUsers = socialNetwork.getUsers().size();
 
             Random random = new Random();

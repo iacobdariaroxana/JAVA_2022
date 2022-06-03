@@ -79,7 +79,7 @@ public class Player implements Runnable {
 
             previousWordLength = 7;
             while (true) {
-                List<Tile> extractedTiles = game.getBag().extractTiles(previousWordLength);
+                List<Tile> extractedTiles = bag.extractTiles(previousWordLength);
 
                 if (extractedTiles.isEmpty()) {
                     game.switchToNextPlayer();

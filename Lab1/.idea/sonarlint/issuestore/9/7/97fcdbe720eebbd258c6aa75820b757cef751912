@@ -1,0 +1,17 @@
+
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ôÚÈû
+N	java:S106"9Replace this use of System.out or System.err by a logger.(€¦Å¨
+S	java:S106C"9Replace this use of System.out or System.err by a logger.(æì«çøÿÿÿÿ
+N	java:S106E"9Replace this use of System.out or System.err by a logger.(»øÉÎ
+S	java:S106G"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+N	java:S106I"9Replace this use of System.out or System.err by a logger.(·ª€÷
+e
+java:S1854v"CRemove this useless assignment to local variable "largerNeighbors".(†è½Ğùÿÿÿÿ8ÿÚä­ô/
+N	java:S106O"9Replace this use of System.out or System.err by a logger.(é†‹İ
+S	java:S106Z"9Replace this use of System.out or System.err by a logger.(´±ñÿÿÿÿÿ
+S	java:S106_"9Replace this use of System.out or System.err by a logger.(´àñÈùÿÿÿÿ
+S	java:S106a"9Replace this use of System.out or System.err by a logger.(éêùÿÿÿÿ
+V
+java:S1481v"4Remove this unused "largerNeighbors" local variable.(†è½Ğùÿÿÿÿ8ƒÛä­ô/
+T	java:S106x"9Replace this use of System.out or System.err by a logger.(Ñï·8êº¶¬ô/
+U	java:S106}"9Replace this use of System.out or System.err by a logger.(ÊÏ€Ğ8„Ûä­ô/

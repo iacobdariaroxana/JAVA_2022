@@ -1,9 +1,7 @@
 package com.laborator11.network.services;
 
-import entities.Friend;
-import entities.User;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
+import models.Friend;
+import models.User;
 import org.springframework.stereotype.Service;
 import repositories.AbstractRepository;
 import repositories.FriendsRepository;
@@ -19,10 +17,10 @@ public class RelationshipService {
     private FriendsRepository dataFriend = new FriendsRepository("Friend");
     private AbstractRepository<User, Integer> dataUser = new UserRepository("User");
 
-    public boolean insertRelationship(String user1, String user2) {
-        if (!dataUser.findByName(user1).isEmpty() && !dataUser.findByName(user2).isEmpty() && dataFriend.findRelationship(user1, user2) == null) {
+    public boolean insertRelationship(int user1, int user2) {
+        if (!(dataUser.findById(user1) == null) && !(dataUser.findById(user2) == null) && dataFriend.findRelationship(user1, user2) == null) {
             dataFriend.create(new Friend(user1, user2));
-            dataFriend.create((new Friend(user2, user1)));
+//            dataFriend.create((new Friend(user2, user1)));
             return true;
         }
         return false;
@@ -32,15 +30,15 @@ public class RelationshipService {
         return dataFriend.findAll();
     }
 
-    public List<Friend> getUserRelationships(String user1){
-        return dataFriend.findByName(user1);
+    public List<Friend> getUserRelationships(int user1){
+        return dataFriend.findByUser1(user1);
     }
 
     public List<User> getFamous(int k){
         List<Friend> relationships = dataFriend.findAll();
         Map<User, Integer> numberOfFriendships = new HashMap<>();
         relationships.stream().forEach(friend -> {
-            User user = new User(friend.getUser1());
+            User user = new User(dataUser.findById(Math.toIntExact(friend.getUser1())).getUsername());
             if (numberOfFriendships.containsKey(user)) {
                 numberOfFriendships.put(user, numberOfFriendships.get(user) + 1);
             } else {

@@ -1,0 +1,12 @@
+
+v
+java:S1450"aRemove the "previousWordLength" field and declare it as a local variable in the relevant methods.(ÜşÀ{
+m
+java:S37769"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(é›¥¼ûÿÿÿÿ
+t
+java:S2142>"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+y
+java:S2142G"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ß•Äøÿÿÿÿ
+^
+java:S2276F"CReplace the call to "Thread.sleep(...)" with a call to "wait(...)".(»àÂÌşÿÿÿÿ
+s	java:S135Q"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ

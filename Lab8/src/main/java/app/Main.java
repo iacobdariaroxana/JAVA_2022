@@ -51,11 +51,6 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        try {
-            Class.forName("oracle.jdbc.OracleDriver");
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
         Database.getConnection();
         Database.runScript();
         var continents = new ContinentDAO();
@@ -108,7 +103,7 @@ public class Main {
         System.out.println(cities.getAll());
 
         System.out.println("Distance between Bucharest and Moscow is: " + distance(cities.getByName("Bucharest"), cities.getByName("Moscow")) + " km ");
-        System.out.println("Distance between Bucharest and Moscow is: " + distance(cities.getByName("Bucharest"), cities.getByName("Moscow")) + " km ");
+        System.out.println("Distance between Cairo and Moscow is: " + distance(cities.getByName("Cairo"), cities.getByName("Moscow")) + " km ");
 
         new WorldFrame(cities.getAll()).setVisible(true);
 

@@ -1,10 +1,10 @@
 
 6
 java:S1170"!Make this final field static too.(À—™u
-=
-java:S1948"'Make "image" transient or serializable.(£Óû¶
-F
-java:S1948 "+Make "offscreen" transient or serializable.(¿Áû•ıÿÿÿÿ
-Y	java:S125œ"<This block of commented-out lines of code should be removed.(Î­ß±8Àõá¨ÿ/
+D
+java:S1948"'Make "image" transient or serializable.(£Óû¶8ÛÓû­0
+M
+java:S1948 "+Make "offscreen" transient or serializable.(¿Áû•ıÿÿÿÿ8ÛÓû­0
+Y	java:S125œ"<This block of commented-out lines of code should be removed.(Î­ß±8‚Ôû­0
 R
-java:S1128"0Remove this unused import 'controller.GameUtil'.(µ“İşüÿÿÿÿ8Õàá¨ÿ/
+java:S1128"0Remove this unused import 'controller.GameUtil'.(µ“İşüÿÿÿÿ8©Ôû­0

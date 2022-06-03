@@ -25,10 +25,9 @@ public class InfoCommand extends Command {
     }
 
     public void utilWeb(String url) {
-
         HttpGet httpget = new HttpGet(url);
         HttpEntity entity = null;
-        HttpClient client =  HttpClientBuilder.create().build();
+        HttpClient client = HttpClientBuilder.create().build();
         try {
             HttpResponse response = client.execute(httpget);
             entity = response.getEntity();

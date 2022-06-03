@@ -5,6 +5,12 @@ import java.util.Objects;
 public class Tile {
     private char letter;
     private int points;
+
+    @Test
+    public Tile(){
+
+    }
+
     public Tile(char letter, int points){
         this.setLetter(letter);
         this.setPoints(points);
@@ -14,6 +20,7 @@ public class Tile {
         return letter;
     }
 
+    @Test
     public void setLetter(char letter) {
         this.letter = letter;
     }

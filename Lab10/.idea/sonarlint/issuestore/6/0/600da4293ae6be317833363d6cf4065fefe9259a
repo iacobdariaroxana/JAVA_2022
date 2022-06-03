@@ -1,0 +1,15 @@
+
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(“–ýþ
+P
+java:S1161":Add the "@Override" annotation above this method signature(“–ýþ
+2
+java:S6205+"Remove this redundant block.(”’ì’
+7
+java:S62054"Remove this redundant block.(»ö©ªþÿÿÿÿ
+7
+java:S6205F"Remove this redundant block.(ý¿ðìùÿÿÿÿ
+E
+java:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+H
+java:S1068"-Remove this unused "startIdle" private field.(¢·÷úýÿÿÿÿ
