@@ -2,9 +2,11 @@ package com.laborator11.network.security;
 
 import models.User;
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
+import java.util.Collections;
 
 public class MyUserPrincipal implements UserDetails {
     private User user;
@@ -15,7 +17,7 @@ public class MyUserPrincipal implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return null;
+        return Collections.<GrantedAuthority>singletonList(new SimpleGrantedAuthority("User"));
     }
 
     @Override

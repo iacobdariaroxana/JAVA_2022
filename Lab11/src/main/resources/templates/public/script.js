@@ -1,6 +1,6 @@
 function login() {
     const form = document.getElementById('login');
-
+    let invalidCredentials = document.getElementById("credentialsNotValid");
     // handle the form data
     const username = form.elements[0];
     const password = form.elements[1];
@@ -17,18 +17,28 @@ function login() {
             })
         }).then(async res => {
             if (res.status === 200) {
-                console.log(res);
-                // toPage('/dashboard.html');
+                const token = await res.text();
+
+                console.log(token);
+                fetch("http://localhost:2022/myAccount", {
+                    method : "GET",
+                    mode: "cors",
+                    headers: {
+                        "Authorization": `Bearer ${token}`
+                    },
+                }).then(res => {
+                    console.log(res.status);
+                    window.location.href = '/myAccount';
+                }).catch(err => console.log(err));
+
             } else {
                 console.log(res.status);
+                invalidCredentials.innerHTML = "incorrect username or password";
+                invalidCredentials.removeAttribute("hidden");
             }
         }).catch(err => console.log(err));
     } else {
-        let invalidCredentials = document.getElementById("credentialsNotValid");
-        invalidCredentials.innerHTML = "incorrect username or password";
-        if (invalidCredentials.hasAttribute("hidden")) {
-            invalidCredentials.removeAttribute("hidden");
-        }
+        invalidCredentials.removeAttribute("hidden");
     }
 }
 

@@ -34,7 +34,6 @@ public class PersonController {
 
     @PostMapping(value = "/register", consumes = "application/json")
     public ResponseEntity<String> createUserObject(@RequestBody User user) {
-        System.out.println("HERE");
         String response = userService.createUserObject(user);
         if(response.equals("success")){
             return new ResponseEntity<>(response, HttpStatus.CREATED);
