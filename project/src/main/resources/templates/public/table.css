@@ -1,0 +1,166 @@
+.inboxMessages, .sentMessages, #inbox , #sent
+{
+    max-width: 34em;
+    color: black;
+    font-weight: 800;
+}
+
+.inboxMessages > div, .sentMessages > div {
+    display: flex;
+    padding: 0.3em 0 0.3em 1.5em;
+    font-size: 0.9em;
+    align-items: center;
+    background-color: rgba(35, 35, 35, 1);
+    color: white;
+}
+
+#searchTag, #searchTagSent
+{
+    margin: 0.6em 0.5em 0.6em 0.6em;
+}
+
+tr > td
+{
+    padding-left: 1.3em;
+    text-align: left;
+}
+
+tr:nth-child(2n)
+{
+    background-color:rgba(7, 128, 128, 0.25);
+}
+
+tr:nth-child(2n+1)
+{
+    background-color: rgba(7, 128, 128, 0.5);
+}
+
+table {
+    width: 100%;
+}
+
+.tableHeader {
+    background-color: rgba(7, 128, 128, 0.5);
+    color: white;
+    font-size: 1em;
+    padding: 1rem;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+th {
+    padding: 0.6em 0.5em 0.6em 1.2em;
+}
+
+#friends
+{
+    max-width: 60rem;
+    background-color: transparent;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.btn.friends
+{
+    background-color: rgba(35, 35, 35, 1);
+}
+
+.friendsOptions > ul
+{
+    padding: 0;
+}
+
+:root {
+    --bg: #fdfdfd;
+    --highlight1: rgba(244, 93, 72, 1);
+    --highlight2: #FFEDBC;
+    --color: #1a1e24;
+    --font-number: "Open Sans", sans-serif;
+    --font-head: "Open Sans", sans-serif;
+    --font: "Open Sans", sans-serif;
+}
+
+.list {
+    list-style: none;
+    padding-top: 1em;
+    width: 24em;
+    margin: auto;
+    max-width: 90%;
+    /* background-color: rgba(7, 128, 128, 0.5); */
+}
+
+.item {
+    display: block;
+    clear: both;
+    counter-increment: list;
+    padding-bottom: 4rem;
+    font-size: 1.1rem;
+    line-height: 1.375;
+    position: relative;
+    text-align: left;
+}
+
+.item:before {
+    font: bold 2.25rem/1 var(--font-number);
+    content: counter(list);
+    width: 5rem;
+    height: 5rem;
+    float: left;
+    margin: 0 1.5rem 0.75rem 0;
+    color: var(--bg);
+    background: var(--highlight1) linear-gradient(to bottom right, var(--highlight1) 25%, var(--highlight2));
+    text-shadow: 0 0 2px var(--highlight1);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    shape-outside: ellipse();
+    z-index: 1;
+}
+
+.item:after {
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background: var(--highlight1);
+    z-index: -1;
+    border-top-left-radius: 3px;
+}
+
+.headline {
+    padding: 1rem 0 0 5em;
+    margin: 0 0 1rem 0;
+    font: bold 2rem var(--font-head);
+}
+
+#addFriend
+{
+    background-color: rgba(244, 93, 72, 1);
+    width: 68%;
+    margin: auto;
+    font-weight: 800;
+}
+
+#addFriend > input
+{
+    margin: 0.5em auto 0.5em 0.5em;
+}
+
+#addFriend > .btn
+{
+    background-color: black;
+    width: 4em;
+    height: 2.5em;
+}
+
+#networkOverview
+{
+    max-width: 100rem;
+}
+#networkOverview > img
+{
+    max-width: 100%;
+}

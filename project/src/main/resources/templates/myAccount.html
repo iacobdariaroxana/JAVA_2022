@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/styles.css">
+    <link rel="stylesheet" href="public/table.css">
+    <title>My account</title>
+</head>
+<body>
+<header class="menu">
+    <button class="btn" onclick="setTab('sendNewMessage');">
+        Send new message
+    </button>
+    <button class="btn" onclick="setTab('inbox');">
+        Inbox
+    </button>
+    <button class="btn"
+            onclick="setTab('sent');">
+        Sent
+    </button>
+    <button class="btn" onclick="setTab('friends');">
+        Friends
+    </button>
+    <button class="btn" onclick="logout()">
+        Logout
+    </button>
+</header>
+<div class="tabs" hidden id="sendNewMessage">
+    <form id="message" action="" method="post">
+        <h3>Send new message</h3>
+        <fieldset>
+            <select name="messageType" class="fields" id="messageType" required autofocus>
+                <option value="">-- Choose message type --</option>
+                <option value="1">To a friend</option>
+                <!--                <option value="2">To all friends</option>-->
+                <option value="2">To a group of users</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <input class="fields" id="usernames" placeholder="Username(s) - comma separated" type="text" required/>
+        </fieldset>
+        <fieldset>
+            <textarea class="fields" id="messageText" placeholder="Type your message here...." required></textarea>
+        </fieldset>
+        <fieldset>
+            <button onclick="send()" class="btn" type="button" id="sendMessage">Send</button>
+        </fieldset>
+    </form>
+    <label hidden id="send-response"></label>
+</div>
+<div class="tabs" hidden id="inbox">
+    <div class="inboxMessages">
+        <div>
+            <label for="searchTag">Search</label>
+            <input type="text" id="searchTag" onchange="search('inbox');"></input>
+        </div>
+
+        <table id="inboxTable" cellspacing="0">
+            <thead class="tableHeader">
+            <tr>
+                <th width="200">From</th>
+                <th>Message</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="tabs" hidden id="sent">
+    <div class="sentMessages">
+        <div>
+            <label for="searchTagSent">Search</label>
+            <input type="text" id="searchTagSent" onchange="search('sent');"></input>
+        </div>
+
+        <table id="outboxTable" cellspacing="0">
+            <thead class="tableHeader">
+            <tr>
+                <th width="200">To</th>
+                <th>Message</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="tabs friends" hidden id="friends">
+    <div>
+        <button class="btn friends" onclick="showFriendsOption('myFriends');">
+            My friends
+        </button>
+        <button class="btn friends" onclick="showFriendsOption('popularUsers');">
+            Find most popular
+        </button>
+        <button class="btn friends" onclick="showFriendsOption('addFriend');">
+            Add friend
+        </button>
+<!--        <button class="btn friends"-->
+<!--                onclick="showFriendsOption('networkOverview');">-->
+<!--            Network overview-->
+<!--        </button>-->
+    </div>
+    <div hidden class="friendsOptions" id="myFriends">
+        <ol class="list" id="myFriendsList">
+        </ol>
+    </div>
+    <div hidden class="friendsOptions" id="popularUsers">
+        <ol class="list" id="vip">
+        </ol>
+    </div>
+    <div hidden class="friendsOptions" id="addFriend">
+        <label for="addFriend">Add friend</label>
+        <input type="text" name="addFriend" id="friendName" required></input>
+        <button class="btn" name="submit" type="button" onclick="addFriend()">Add</button>
+        <label id="response-insert-friend"></label>
+    </div>
+    <div hidden class="friendsOptions" id="networkOverview">
+        <img alt="network overview" th:src="@{images/network.jpg}"/>
+    </div>
+</div>
+<script src="public/script.js"></script>
+<script src="public/send.js"></script>
+<script src="public/friends.js"></script>
+<script src="public/logout.js"></script>
+<script src="public/inbox.js"></script>
+<script src="public/outbox.js"></script>
+<script src="public/search.js"></script>
+</body>
+</html>
