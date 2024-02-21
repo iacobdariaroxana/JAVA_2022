@@ -1,2 +1,13 @@
-# PA_2022_2B3_IACOB_DARIA-ROXANA
- 
+Laboratories topics:
+- classes and interfaces
+- graphs algorithms (Dijkstra, Floyd Warshall)
+- Client-Server architecture
+- networking
+- exceptions
+- JDBC API
+- Java Stream API
+- graphic interfaces - Java2D, Swing
+- Remote Method Invocation
+- REST - Spring Framework
+- Reflections API
+- Internationalization and Localization in Java
